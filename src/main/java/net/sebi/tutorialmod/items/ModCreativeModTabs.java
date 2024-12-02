@@ -25,6 +25,10 @@ public class ModCreativeModTabs {
                         p0utput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         p0utput.accept(ModBlocks.AUREL_BLOCK.get());
                         p0utput.accept(ModBlocks.PEUL_BLOCK.get());
+                        p0utput.accept(ModBlocks.SAPPHIRE_ORE.get());
+                        p0utput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        p0utput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+                        p0utput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
                     })
                     .build());
