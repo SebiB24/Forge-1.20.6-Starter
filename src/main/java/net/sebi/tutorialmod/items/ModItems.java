@@ -20,6 +20,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> AUREL = ITEMS.register("aurel", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> TOADER = ITEMS.register("toader", () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

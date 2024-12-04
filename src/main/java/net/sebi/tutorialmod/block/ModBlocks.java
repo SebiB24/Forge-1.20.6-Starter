@@ -3,16 +3,16 @@ package net.sebi.tutorialmod.block;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.FlowingFluid;
+import net.minecraft.world.level.material.WaterFluid;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sebi.tutorialmod.TutorialMod;
+import net.sebi.tutorialmod.block.custom.SoundBlock;
 import net.sebi.tutorialmod.items.ModItems;
 
 import java.util.function.Supplier;
@@ -45,6 +45,9 @@ public class ModBlocks {
             ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD)));
     public static final RegistryObject<Block> AUREL_BLOCK = registerBlock("aurel_block",
             ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD)));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK)));
 
 
 

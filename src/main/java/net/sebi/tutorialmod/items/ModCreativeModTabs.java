@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                         p0utput.accept(ModItems.SAPPHIRE.get());
                         p0utput.accept(ModItems.RAW_SAPPHIRE.get());
                         p0utput.accept(ModItems.AUREL.get());
+                        p0utput.accept(ModItems.TOADER.get());
                         p0utput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         p0utput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         p0utput.accept(ModBlocks.AUREL_BLOCK.get());
@@ -30,6 +31,7 @@ public class ModCreativeModTabs {
                         p0utput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         p0utput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
                         p0utput.accept(ModItems.METAL_DETECTOR.get());
+                        p0utput.accept(ModBlocks.SOUND_BLOCK.get());
 
                     })
                     .build());
