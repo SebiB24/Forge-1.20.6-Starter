@@ -44,7 +44,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> PEUL_BLOCK = registerBlock("peul_block",
             ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD)));
     public static final RegistryObject<Block> AUREL_BLOCK = registerBlock("aurel_block",
-            ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD)));
+            ()-> new TntBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD)));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK)));

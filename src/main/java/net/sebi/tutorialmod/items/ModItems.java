@@ -18,9 +18,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register("raw_sapphire", () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> AUREL = ITEMS.register("aurel", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AUREL = ITEMS.register("aurel", () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
 
     public static final RegistryObject<Item> TOADER = ITEMS.register("toader", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
