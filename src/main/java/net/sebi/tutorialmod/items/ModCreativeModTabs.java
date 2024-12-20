@@ -35,6 +35,16 @@ public class ModCreativeModTabs {
                         p0utput.accept(ModItems.STRAWBERRY.get());
                         p0utput.accept(ModItems.PINE_CONE.get());
 
+                        p0utput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
+                        p0utput.accept(ModBlocks.SAPPHIRE_SLAB.get());
+                        p0utput.accept(ModBlocks.SAPPHIRE_BUTTON.get());
+                        p0utput.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
+                        p0utput.accept(ModBlocks.SAPPHIRE_FENCE.get());
+                        p0utput.accept(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+                        p0utput.accept(ModBlocks.SAPPHIRE_WALL.get());
+                        p0utput.accept(ModBlocks.SAPPHIRE_DOOR.get());
+                        p0utput.accept(ModBlocks.SAPPHIRE_TRAP_DOOR.get());
+
                     })
                     .build());
 
