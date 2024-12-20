@@ -45,6 +45,8 @@ public class ModCreativeModTabs {
                         p0utput.accept(ModBlocks.SAPPHIRE_DOOR.get());
                         p0utput.accept(ModBlocks.SAPPHIRE_TRAP_DOOR.get());
 
+                        p0utput.accept(ModItems.SAPPHIRE_STAFF.get());
+
                     })
                     .build());
 

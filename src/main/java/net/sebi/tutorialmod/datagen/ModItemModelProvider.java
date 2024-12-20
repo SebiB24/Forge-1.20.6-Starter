@@ -52,6 +52,12 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation(TutorialMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(TutorialMod.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
     public void evenSimplerBlockItem(RegistryObject<Block> block) {
         this.withExistingParent(TutorialMod.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
@@ -77,10 +83,6 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .texture("wall",  new ResourceLocation(TutorialMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
-    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(TutorialMod.MOD_ID,"item/" + item.getId().getPath()));
-    }
+
 
 }
