@@ -6,8 +6,11 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.sebi.tutorialmod.TutorialMod;
 import net.sebi.tutorialmod.block.ModBlocks;
+import net.sebi.tutorialmod.items.ModItems;
+import net.sebi.tutorialmod.items.ModToolTiers;
 import net.sebi.tutorialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -52,8 +55,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
                         ModBlocks.SAPPHIRE_BLOCK.get(),
                         ModBlocks.SAPPHIRE_ORE.get(),
-                        ModBlocks.AUREL_BLOCK.get(),
-                        ModBlocks.PEUL_BLOCK.get(),
                         ModBlocks.SOUND_BLOCK.get()
 
                 );
@@ -63,6 +64,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
+
+        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
+                .add(ModBlocks.AUREL_BLOCK.get(),
+                        ModBlocks.PEUL_BLOCK.get()
+                );
+
+        this.tag(ModTags.Blocks.INCORECT_FOR_SAPPHIRE_TOOL);
 
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.SAPPHIRE_FENCE.get());
