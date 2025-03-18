@@ -83,14 +83,11 @@ Before installing the mod, ensure you have the following:
 
 ### Installation
 1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-repo/TutorialMod.git
-   ```
 
 2. **Build the Mod**
    Navigate to the project directory and run:
    ```bash
-   ./gradlew build
+   ./build.gradle
    ```
 
 3. **Install the Mod**
