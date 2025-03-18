@@ -91,14 +91,9 @@ Before installing the mod, ensure you have the following:
    ```
 
 3. **Install the Mod**
-   Copy the generated `.jar` file from the `build/libs` directory to your Minecraft `mods` folder.
 
 ### Usage
 - Launch **Minecraft** with Forge.
 - Select the mod from the **Mods List**.
 - Enjoy exploring new **blocks, items, and mechanics** in your world!
 
----
-
-## Contributing
-We welcome contribut
